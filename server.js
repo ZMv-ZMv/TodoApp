@@ -232,8 +232,14 @@ app.post("/update-item", function(req, res){
 })
 */
 
+
+
 // ****************************************************************************
 // 34 - Updating a Database Item Part 2 ***************************************
+// 35 - Deleting a Database Item **********************************************
+// 36 - Create New Item Without Page Reload ***********************************
+// 38 - What About Security ***************************************************
+// 37 - ClientSide Rendering **************************************************
 // ****************************************************************************
 
 let express = require("express")
@@ -327,3 +333,11 @@ app.post("/delete-item", async function(req, res){
   await db.collection("items").deleteOne({_id: new ObjectId(req.body.id)})
   res.redirect("/")
 })
+
+
+// ****************************************************************************
+// 40 - Pushing Our App Onto The Internet *************************************
+// ****************************************************************************
+
+// Web online:
+// https://todoapp01.onrender.com
